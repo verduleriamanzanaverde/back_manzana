@@ -26,5 +26,5 @@ mongoose.connect(process.env.MONGO_URL)
 .catch((e)=>{console.log(`el error es ${e}`)})
 
 app.use("/",(req, res)=>{
-    res.status(400).send("ruta no econtrada")
+    res.status(400).send("ruta no encontrada")
 })
